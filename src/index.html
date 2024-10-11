@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mini-Weather-APP</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+<main class="card">
+    <section class="search">
+        <form name="forma">
+            <input name="town" class="inputt" type="text" placeholder="Введите название города">
+            <button disabled class="input_btn input_btn_disabled">
+                <img
+                        class="button_img"
+                        src="./images/search.png"
+                        alt="Лупа для поиска"
+                        loading="lazy"
+                />
+            </button>
+        </form>
+    </section>
+    <section class="weather_info">
+        <img class="weather_ico" src="./images/main/rain.png">
+        <h1 class="temp"> 32°C</h1>
+        <h2 class="town">Rostov-on-Donыыыыыыыы</h2>
+        <div class="details">
+            <div class="col">
+                <img loading="lazy" src="./images/main/humidity.png">
+                <div>
+                    <p class="hum">50%</p>
+                    <p>Влажность</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./images/main/wind.png">
+                <div>
+                    <p class="wind">15 km/h</p>
+                    <p>Скорость ветра</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="./scripts/index.js"></script>
+</body>
+</html>
