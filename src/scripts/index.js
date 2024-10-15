@@ -23,8 +23,8 @@ async function checkWeather(city) {
     let data = await response.json();
 
     console.log(data);
-    if (data.cod === 200) {
 
+    if (response.ok) {
         document.querySelector('.town').textContent = data.name;
         document.querySelector('.temp').textContent = Math.floor(data.main.temp) +"°C";
         document.querySelector('.hum').textContent = Math.floor(data.main.humidity) +"%";
@@ -36,8 +36,27 @@ async function checkWeather(city) {
     else {
         document.querySelector('.town').textContent = `Город ${city} не найден`;
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,5 +96,4 @@ form.addEventListener('input', function (evt) {
     const isValid = town_input.value.length > 0 ;
     setSubmitButtonState(isValid);
 });
-
 
